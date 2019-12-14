@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import SharkTank from '../components/SharkTank/sharkTank';
 
 class App extends React.Component {
