@@ -1,5 +1,6 @@
 import React from 'react';
 import studentShape from '../../helpers/propz/studentShape';
+import './liveStudent.scss';
 // import PropTypes from 'prop-types';
 
 class LiveStudent extends React.Component {

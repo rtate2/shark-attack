@@ -1,8 +1,10 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import LiveStudent from '../LiveStudent/liveStudent';
-
 import studentShape from '../../helpers/propz/studentShape';
+
+import './sharkTank.scss';
 
 class SharkTank extends React.Component {
   static propTypes = {
