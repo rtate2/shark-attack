@@ -1,4 +1,5 @@
 import React from 'react';
+import './graveyard.scss';
 
 class Graveyard extends React.Component {
   render() {

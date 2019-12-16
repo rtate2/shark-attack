@@ -18,9 +18,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <button className="btn btn-danger">Shark Attack</button>
+        <button className="btn btn-danger shark-button">Shark Attack</button>
+        <div className="contain">
           <SharkTank students={this.state.students} />
           <Graveyard />
+        </div>
       </div>
     );
   }
