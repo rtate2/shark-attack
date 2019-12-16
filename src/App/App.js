@@ -3,6 +3,7 @@ import './App.scss';
 
 import SharkTank from '../components/SharkTank/sharkTank';
 import studentData from '../helpers/data/studentData';
+import Graveyard from '../components/Graveyard/graveyard';
 
 class App extends React.Component {
   state= {
@@ -17,8 +18,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <button className="btn btn-danger">Shark Attack</button>
+        <button className="btn btn-danger shark-button">Shark Attack</button>
+        <div className="contain">
           <SharkTank students={this.state.students} />
+          <Graveyard />
+        </div>
       </div>
     );
   }
