@@ -5,7 +5,7 @@ import './liveStudent.scss';
 
 class LiveStudent extends React.Component {
   static propTypes = {
-    student: studentShape.studentShape,
+    livingStudents: studentShape.studentShape,
   }
 
   render() {
@@ -16,7 +16,6 @@ class LiveStudent extends React.Component {
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
         <h5 className="card-title">{student.firstName + student.lastName}</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     );
