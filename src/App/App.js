@@ -7,21 +7,33 @@ import Graveyard from '../components/Graveyard/graveyard';
 
 class App extends React.Component {
   state= {
-    students: [],
+    livingStudents: [],
+    deadStudents: [],
   }
 
   componentDidMount() {
-    const students = studentData.getStudents();
-    this.setState({ students });
+    const livingStudents = studentData.livingStudents();
+    this.setState({ livingStudents });
+
+    const deadStudents = studentData.dearlyBeloved();
+    this.setState({ deadStudents });
+  }
+
+  sharkAttack = () => {
+    const livingStudents = studentData.livingStudents();
+    const randomStudent = livingStudents[Math.floor(Math.random() * livingStudents.length)];
+    const randomStudentId = randomStudent.id;
+    studentData.followTheLight(randomStudentId);
+    const deadStudents = studentData.dearlyBeloved();
+    this.setState({ deadStudents, livingStudents });
   }
 
   render() {
     return (
       <div className="App">
-        <button className="btn btn-danger shark-button">Shark Attack</button>
         <div className="contain">
-          <SharkTank students={this.state.students} />
-          <Graveyard />
+          <SharkTank livingStudents={this.state.livingStudents} sharkAttack={this.sharkAttack} />
+          <Graveyard deadStudents={this.state.deadStudents} />
         </div>
       </div>
     );
