@@ -32,7 +32,7 @@ class SharkTank extends React.Component {
         <div className="container">
         <button className="col-4 offset-4 btn btn-danger shark-button" onClick={this.sharkAttackEvent}>Shark Attack</button>
         </div>
-        <div className="row studentCards">
+        <div className="row studentCards offset-2">
         {studentCards}
         </div>
       </div>

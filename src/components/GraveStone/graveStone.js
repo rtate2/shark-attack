@@ -15,7 +15,7 @@ class GraveStone extends React.Component {
       <div className="headStone">
         <p className="first text-white m-0">{gravestone.firstName}</p>
         <p className="last text-white m-0">{gravestone.lastName}</p>
-        <img className="image mb-5 grave-stone" src="https://images-na.ssl-images-amazon.com/images/I/618DDixJvpL._SX425_.jpg" alt="gravestone"></img>
+        <img className="image mb-5 grave-stone" src="http://pngimg.com/uploads/gravestone/gravestone_PNG54.png" alt="gravestone"></img>
       </div>
     );
   }
