@@ -12,11 +12,10 @@ class LiveStudent extends React.Component {
     const { student } = this.props;
 
     return (
-      <div className="card col-5 studentCard">
-        <img src="..." className="card-img-top" alt="..." />
-        <div className="card-body">
-        <h5 className="card-title">{student.firstName + student.lastName}</h5>
-        </div>
+      <div className="livingStudent">
+        <p className="first1 text-white m-0">{student.firstName}</p>
+        <p className="last1 text-white m-0">{student.lastName}</p>
+        <img className="image scuba mb-5" src="https://myrealdomain.com/images/cartoon-scuba-divers-1.png" alt="Scuba Diver" />
       </div>
     );
   }
